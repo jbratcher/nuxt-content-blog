@@ -126,6 +126,17 @@ body,
   vertical-align: text-bottom;
 }
 
+.nuxt-content h2 a > .icon.icon-link {
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem 2rem;
+}
+.nuxt-content h3 a > .icon.icon-link {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem 1.5rem;
+}
+
 @media only screen and (max-width: 960px) {
   .icon.icon-link {
     width: 36px;
