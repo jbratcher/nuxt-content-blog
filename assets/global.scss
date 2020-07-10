@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto");
+  font-display: swap;
+}
+
+:root {
+  font-size: 1rem; // fallback for older browsers
+  font-size: calc(1vw + 1vh + 0.5vmin); // fluid typography
+}
+
+html,
+body,
+.v-application {
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  word-break: keep-all;
+  word-spacing: 1px;
+}
+
+// main nav
+
+.v-toolbar.v-toolbar--prominent {
+  .v-toolbar__content {
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+  }
+}
+
+// footer
+
+.v-footer {
+  ul {
+    list-style-type: none;
+  }
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// helper classes
+.full-height {
+  min-height: 100%;
+}
+
+.py-24 {
+  padding: 2rem 0;
+}
+
+// <nuxt-content> styling
+
+.nuxt-content {
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.125rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    line-height: 1.125;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    font-size: 1.67rem;
+  }
+  h3 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .nuxt-content {
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    h2 {
+      font-size: 2.125rem;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// hashtag for markdown headers in content files
+
+.icon.icon-link {
+  background-image: url("~assets/svg/icon-hashtag.svg");
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem 2rem;
+  vertical-align: text-bottom;
+}
+
+@media only screen and (max-width: 960px) {
+  .icon.icon-link {
+    width: 36px;
+    height: 36px;
+    background-size: 36px 36px;
+  }
+}

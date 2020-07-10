@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-content-blog",
+  "description": "A modern blog using Nuxt Content module and full static generation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "static": "nuxt build --target static && nuxt export",
+    "serve": "nuxt serve"
+  },
+  "dependencies": {
+    "@mdi/js": "^5.3.45",
+    "@nuxt/content": "^1.3.2",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "nuxt": "latest",
+    "nuxt-webfontloader": "^1.1.0",
+    "prism-themes": "1.4.0"
+  },
+  "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.0.1",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}
