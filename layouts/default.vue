@@ -67,7 +67,9 @@
       <nav>
         <ul class="d-flex flex-wrap py-3">
           <li v-for="(link, i) in footerLinks" :key="i + link.title">
-            <v-btn :name="link.title" text rounded>{{ link.title }}</v-btn>
+            <v-btn :name="link.title" text :to="link.to" rounded>{{
+              link.title
+            }}</v-btn>
           </li>
         </ul>
       </nav>
